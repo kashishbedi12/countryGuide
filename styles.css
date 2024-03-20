@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #304c89;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 50px;
+}
+
+#heading-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+
+#desc {
+    font-size: 18px;
+    color: #e8e8e8;
+    opacity: 0.85;
+}
+
+#heading {
+    font-size: 50px;
+    font-weight: 1000;
+    color: #e8e8e8;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.548);
+    width: 90vh;
+    max-width: 37.5em;
+    padding: 3em 2.5em;
+    border-radius: 0.62em;
+    box-shadow: 0.4em 1em 2em rgba(0, 0, 0, 0.331);
+}
+
+.search-wrapper {
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    height: 90px;
+    /* gap: 1.25em; */
+    justify-content: center;
+    align-content: center;
+    padding-top: auto;
+}
+
+.search-wrapper button {
+    font-size: 0.9em;
+    background-color: #00000091;
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(197, 197, 197);
+    padding: 1.2em 0;
+    /* border-radius: 1.5em; */
+}
+
+.search-wrapper button:hover {
+    background-color: #000;
+    /* color: rgb(0, 0, 0); */
+    color: #fff;
+    font-weight: 800;
+    border: 1px solid rgb(1, 1, 1);
+    transition: 0.3s;
+    cursor: pointer;
+    transform: scale(1.1)
+}
+
+.search-wrapper input {
+    background-color: rgb(240, 225, 225);
+    opacity: 0.85;
+    font-size: 0.9em;
+    padding: 0 0.62em;
+    outline: none;
+    color: #000000;
+    border: 0.5px solid #000000;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+
+}
+
+.search-wrapper input:focus{
+    /* background-color: transparent; */
+    color: #000000;
+    font-weight: 500;
+    border: 0.1px solid #ffffff;
+}
+
+#result {
+    margin-top: 2em;
+}
+
+.container .flag-img {
+    display: block;
+    width: 40%;
+    min-width: 7.5em;
+    margin: 2em auto 1.2em auto;
+}
+
+.container h2 {
+    font-weight: 600;
+    color: #e8e8e8;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1.8em;
+}
+
+.data-wrapper {
+    margin-bottom: 1em;
+    letter-spacing: 0.3px;
+}
+
+.container h4 {
+    display: inline;
+    font-weight: 500;
+    color: #ffffff7d;
+}
+
+.container span {
+    color: #ffffff;
+}
+
+.container h3 {
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: 400;
+    color: #ff5050;
+}
+
+@media only screen and (max-width: 550px) {
+    #heading {
+        font-size: 32px;
+    }
+    #desc {
+        font-size: 11px;
+    }
+    .container {
+        width: 80%;
+        padding: 3em 2em;
+        justify-content: center;
+    }
+    .search-wrapper button {
+        font-size: 0.6em;
+        padding: 0.9em 0.5em;
+    }
+    .search-wrapper {
+        grid-template-columns: 7fr 1fr;
+        gap: 1em;
+    }
+    .search-wrapper input {
+        font-size: 0.7em;
+        padding: 0 0.62em;
+        width: 45vw;
+    }
+    .container h2 {
+        font-size: 1.2em;
+    }
+    .data-wrapper {
+        font-size: 0.65em;
+    }
+}
+
+
+/*Certainly! Let's break down the provided CSS code in simpler terms:
+
+Importing Google Fonts:
+
+The @import rule is used to import a Google Font named "Open Sans" to be used in the webpage.
+Universal Reset:
+
+* selects all elements on the webpage.
+padding: 0; margin: 0; removes default padding and margin from all elements.
+box-sizing: border-box; ensures that padding and border are included in the element's total width and height.
+font-family: 'Open Sans', sans-serif; sets the default font family for all elements to "Open Sans" or any available sans-serif font if "Open Sans" is not available.
+Body Styling:
+
+background-color: #304c89; sets the background color of the webpage to a dark blue.
+height: 100vh; makes the body take up the entire height of the viewport.
+display: flex; flex-direction: column; align-items: center; justify-content: center; centers content both horizontally and vertically within the viewport and arranges them in a column.
+Heading Division Styling:
+
+display: flex; flex-direction: column; align-items: center; arranges the items within the heading division in a column and centers them horizontally.
+row-gap: 10px; sets the gap between rows within the heading division.
+Styling for Text Content:
+
+font-size, color, and opacity properties are applied to text elements like headings and descriptions.
+Container Styling:
+
+Sets the styles for a container that wraps the main content.
+Specifies its background color, width, padding, border radius, and box shadow.
+Search Wrapper Styling:
+
+Defines the layout and style for the search bar and button within the container.
+Responsive Design:
+
+Media queries are used to apply different styles based on the screen size (e.g., smaller font sizes and adjusted widths for smaller screens).
+In essence, the CSS code sets up the layout, typography, colors, and responsiveness of the webpage, ensuring a visually appealing and user-friendly design.
+
+
+
+
+
+
+
